@@ -36,8 +36,13 @@ class _RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Startup Name Generator'),
-        actions: [IconButton(onPressed: pushSaved, icon: const Icon(Icons.list))],
+        title  : const Text('Startup Name Generator'),
+        actions: [
+          IconButton(
+            onPressed: pushSaved,
+            icon     : const Icon(Icons.list)
+          )
+        ],
       ),
       body: ListView.builder(
         padding    : const EdgeInsets.all(16.0),
